@@ -70,7 +70,7 @@ def webhook():
 	result = req.get("queryResult")
 	if result is None:
 		print "No result received at all"
-			return
+		return
 	parameters = result.get("parameters")
 	for assistanHandlerClass in handlerutils.assistanHandlerClasses:
 		#print assistanHandlerClass
