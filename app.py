@@ -79,7 +79,9 @@ def webhook():
 	for assistanHandlerClass in handlerutils.assistanHandlerClasses:
 		print "assistantHandlerClass:"
 		print assistanHandlerClass
-		assistantHandler = assistanHandlerClass()  
+		assistantHandler = assistanHandlerClass()
+		print "assistantHandler:"
+		print assistanHandler
 		if assistantHandler.shouldHandle(req, parameters):
 			res = assistantHandler.handle(parameters)
 			print "It's breaking"
