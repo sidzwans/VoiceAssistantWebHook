@@ -71,7 +71,7 @@ def webhook():
 	if result is None:
 		print "No result received at all"
 		#return
-	parameters = result.get("displayName")
+	parameters = result.get("action")
 	print parameters
 	for assistanHandlerClass in handlerutils.assistanHandlerClasses:
 		#print assistanHandlerClass
