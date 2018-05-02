@@ -16,5 +16,5 @@ class AssistantHandlerHelloWorld(AssistantHandler):
 	def getEndpointParameters(self,parameters):
 		pass
 
-	def getSpeech(self, parameters, data):
+	def getFullfillment(self, parameters, data):
 		return "Hello World!"
