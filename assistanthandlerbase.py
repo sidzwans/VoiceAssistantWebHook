@@ -39,7 +39,7 @@ class AssistantHandler(object):
 		self.action = action
 
 	def shouldHandle(self, req, parameters):	 
-		result = req.get("result")
+		result = req.get("queryREsult")
 		if result is None:
 			return False;
 		action = result.get("action")
