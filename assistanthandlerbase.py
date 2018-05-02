@@ -68,12 +68,12 @@ class AssistantHandler(object):
 			data = None
 			if result is not None:
 				data = json.loads(result)
-		return self.getResponse(self.getSpeech(parameters, data))
+		return self.getResponse(self.getFullfillment(parameters, data))
 
-	def getResponse(self,speech):
+	def getResponse(self,fulfillmentText):
 		return {
-			"speech": speech,
-			"displayText": speech,
+			"fulfillmentText": fulfillmentText,
+			"fulfillmentText": fulfillmentText,
 			# "data": data,
 			# "contextOut": [],
 			"source": "joaomgcd_apiai_webhook"
