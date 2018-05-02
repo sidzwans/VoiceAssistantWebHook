@@ -77,7 +77,8 @@ def webhook():
 	print "parameters:"
 	print parameters
 	for assistanHandlerClass in handlerutils.assistanHandlerClasses:
-		#print assistanHandlerClass
+		print "assistantHandlerClass:"
+		print assistanHandlerClass
 		assistantHandler = assistanHandlerClass()  
 		if assistantHandler.shouldHandle(req, parameters):
 			res = assistantHandler.handle(parameters)
